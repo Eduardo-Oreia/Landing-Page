@@ -1,0 +1,142 @@
+/*------------------------------------------------- *\
+#GOOGLE FONTS
+\*------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&family=Roboto+Mono:ital,wght@0,400;1,600&display=swap');
+
+
+/*------------------------------------------------- *\
+#CSS VARIABLE
+\*------------------------------------------------- */
+
+:root{
+    --preto: #000000;
+    --branco: #ffffff;
+    --vermelho1: #650404;
+    --vermelho2: #BD0A0A;
+    --vermelho3: #FF3737;
+    --vermelho4: #FFD6D6;
+
+
+    --normal: 'M PLUS Rounded 1c', sans-serif;
+    --bold: 'Roboto Mono', monospace;
+}
+
+/*------------------------------------------------- *\
+#RESEAT
+\*------------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*------------------------------------------------- *\
+#CSS CLASSES
+\*------------------------------------------------- */
+.nav_container{
+    max-width: 1000px;
+    height: 65px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.nav_logo {
+    display: flex;
+    align-items: center;
+    color: var(--preto);
+}
+.nav_logo-img{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.nav_list{
+    display: flex;
+}
+
+/* BUTTON */
+
+.nav_link_sign-in {
+    margin-right: 10px;
+    color: var(--preto);
+}
+.nav_link_sign-in:hover{
+    color: var(--vermelho1);
+}
+
+.btn_get-started{
+    color: var(--branco);
+    font-weight: bold;
+    background-color: var(--vermelho3);
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.btn_get-started:hover{
+    background-color: var(--vermelho1);
+    color: var(--branco);
+}
+
+
+
+/*------------------------------------------------- *\
+#HEADER
+\*------------------------------------------------- */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav_items{
+    display: inline-block;
+}
+
+.nav_link{
+    color: var(--preto);
+    font-size: 18px;
+
+    font-weight: bold;
+    margin-right: 30px;
+    transition: 0.3s;
+}
+.nav_link:hover{
+    color: var(--vermelho3);
+}
+
+.nav_btns{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+/*------------------------------------------------- *\
+#CLOSE 
+\*------------------------------------------------- */
+
+.nav_close{
+    display: none;
+}
+.nav_toggle{
+    display: none;
+}
+
+/* #ACTIVE LINK */
+.active-link{
+    color: var(--vermelho3);
+}
+
+
+
+
