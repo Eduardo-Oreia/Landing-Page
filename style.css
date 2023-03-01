@@ -102,6 +102,8 @@
     left: 0;
     width: 100%;
     z-index: 10;
+    background-color: #f1f1f1;
+
 }
 
 .nav_items{
@@ -138,10 +140,13 @@
 }
 
 /* #ACTIVE LINK */
-.active-link{
+
+.nav_link_sign-in i{
     color: var(--vermelho3);
 }
-
+.nav_link_sign-in i:hover{
+    color: var(--vermelho1);
+}   
 
 
 
@@ -150,25 +155,31 @@
 \*------------------------------------------------- */
 
 .home{
-    margin-top: 60px;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    min-height: 105vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f3f3f3d8;
 }
 
 .home_datas{
+    padding: 10px;
+    margin: 0 auto;
     width: 400px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .home_tittle{
+    width: 400px;
     font-size: 40px;
-    margin: 10px 0;
 }
 
 .home_description{
     margin-bottom: 18px;
-    
 }
 
 .home_search{
@@ -185,6 +196,7 @@
 
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
+    background-color: #f1f1f1;
 }
 
 .search_btn{
@@ -220,3 +232,78 @@
     font-size: 15px;
     color: #00000070;
 }
+
+.home_image{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/*------------------------------------------------- *\
+#STATS
+\*------------------------------------------------- */
+
+.stats{
+    height: 100px;
+    background-color: #adadad;
+}
+.stats_container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.stats_item{
+    background-color: var(--branco);
+    border-radius: 4px;
+    box-shadow: 0 -2px 5px 0 #00000081;
+    width: 280px;
+    padding: 20px 10px;
+    position: relative;
+    top: -50px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.stats_icon{
+    width: 80px;
+    height: 40px;
+    border: 3px solid #650404;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+.fa-book{
+    color: var(--preto);
+    margin-left: 6px;
+}
+.fa-business-time{
+    color: var(--preto);
+    margin-left: 5px;
+}
+.fa-user-shield{
+    color: var(--preto);
+    margin-left: 5px;
+}
+
+
+.stats_title{
+    color: #000000;
+}
+
+.stats_description{
+    color: #3838388f;
+}
+
+/*------------------------------------------------- *\
+#BREAKPOINTS
+\*------------------------------------------------- */
+
+
+
+
+
+
+
